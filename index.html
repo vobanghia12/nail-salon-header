@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ombre Nails Spa</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2>ombre</h2>
+        <div class="toggle"></div>
+      </header>
+
+      <video src="nails.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Welcome to our salon</h2>
+        <h3>Your presentation is the bless for us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          eos quod maxime ipsam voluptatem quas enim, corporis iste itaque est
+        </p>
+        <button>Explore</button>
+      </div>
+      <ul class="social-media">
+        <li>
+          <a href="#"
+            ><img src="facebook-logo.png" height="40px" width="40px"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="instagram.png" height="40px" width="40px" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="twitter.png" height="40px" width="30px" /></a>
+        </li>
+      </ul>
+    </section>
+    <section class="menu remove">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Info</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Product</a>
+        </li>
+      </ul>
+    </section>
+  </body>
+  <script>
+    const btnCancel = document.querySelector(".cancel");
+    const menu = document.querySelector(".menu");
+    const toggleMenu = document.querySelector(".toggle");
+    const showcaseZ = document.querySelector(".showcase");
+    toggleMenu.addEventListener("click", () => {
+      toggleMenu.classList.toggle("cancel");
+      showcaseZ.classList.toggle("active1");
+      menu.classList.toggle("remove");
+    });
+  </script>
+</html>
